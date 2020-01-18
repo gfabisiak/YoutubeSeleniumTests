@@ -9,6 +9,8 @@ import pl.gfabisiak.youtube.PageObjects.YoutubeMainPage;
 import pl.gfabisiak.youtube.PageObjects.YoutubeSearchPage;
 import pl.gfabisiak.youtube.PageObjects.YoutubeVideo;
 
+import java.util.concurrent.TimeUnit;
+
 public class PageObjectTests {
 
     public WebDriver driver;
@@ -17,6 +19,7 @@ public class PageObjectTests {
     public void Initialize(){
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
     }
 
     @Test
