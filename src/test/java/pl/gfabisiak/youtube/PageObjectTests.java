@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pl.gfabisiak.youtube.PageObjects.YoutubeMainPage;
 import pl.gfabisiak.youtube.PageObjects.YoutubeSearchPage;
+import pl.gfabisiak.youtube.PageObjects.YoutubeVideo;
 
 public class PageObjectTests {
 
@@ -27,6 +28,13 @@ public class PageObjectTests {
     public void GoToSearchResults(){
         YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
         YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
+    }
+
+    @Test
+    public void GoToFirstResultOfSearch(){
+        YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
+        YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
     }
 
     @After

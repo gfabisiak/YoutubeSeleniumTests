@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28943e95-2122-4a69-8661-f9118c6906ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeSearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeVideo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjectTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeSearchPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.PageObjectTests.GoToSearchResults">
+  <component name="RunManager" selected="JUnit.PageObjectTests.GoToFirstResultOfSearch">
+    <configuration name="PageObjectTests.GoToFirstResultOfSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YoutubeSeleniumTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.gfabisiak.youtube.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.gfabisiak.youtube" />
+      <option name="MAIN_CLASS_NAME" value="pl.gfabisiak.youtube.PageObjectTests" />
+      <option name="METHOD_NAME" value="GoToFirstResultOfSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PageObjectTests.GoToSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YoutubeSeleniumTests" />
       <extension name="coverage">
@@ -67,6 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PageObjectTests.GoToFirstResultOfSearch" />
         <item itemvalue="JUnit.PageObjectTests.GoToSearchResults" />
         <item itemvalue="JUnit.PageObjectTests.OpenYoutubeMainPage" />
       </list>
@@ -98,22 +115,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1579339585973">
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1579340488181">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1579339585973" />
-    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1579339585972">
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1579340488181" />
+    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1579340488181">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1579339585972" />
-    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1579339585972">
+    <state width="1876" height="280" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1579340488181" />
+    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1579340488180">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1579339585972" />
-    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1579339585972">
+    <state width="1876" height="280" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1579340488180" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1579340488181">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1579339585972" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1579340488181" />
     <state x="616" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1579337129835">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
