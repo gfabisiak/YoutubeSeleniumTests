@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PageObjectTests {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     @Before
     public void setUp(){
@@ -65,7 +65,7 @@ public class PageObjectTests {
     }
 
     @AfterClass
-    public void tearDown(){
+    public static void tearDown(){
         driver.close();
     }
 }
