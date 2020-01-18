@@ -49,16 +49,18 @@ public class PageObjectTests {
     }
 
     @Test
-    public void CommentsSectionTest(){
+    public void CommentsSectionTest() throws InterruptedException {
         YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
         YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
         YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
-        youtubeVideo.ScrollDownToTheBottomOfThePage();
+        youtubeVideo.GoToCommentsSection();
+        Thread.sleep(1000);
+        youtubeVideo.GoToTheBottomOfThePage();
     }
 
     @After
     public void Finalize() throws InterruptedException {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         //driver.quit();
     }
 }

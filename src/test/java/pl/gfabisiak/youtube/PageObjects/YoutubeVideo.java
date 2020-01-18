@@ -5,7 +5,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import pl.gfabisiak.youtube.HelperFunctions;
+
 public class YoutubeVideo {
+
     public WebDriver localDriver;
 
     public YoutubeVideo(WebDriver driver){
@@ -19,12 +22,11 @@ public class YoutubeVideo {
     }
 
     public void GoToCommentsSection(){
-        WebElement commentSection = this.localDriver.findElement(By.cssSelector("#comments"));
-        ((JavascriptExecutor) this.localDriver).executeScript("arguments[0].scrollIntoView(true);", commentSection);
+        WebElement commentSection = this.localDriver.findElement(By.id("sections"));
+        HelperFunctions.MoveToElementUsingActions(this.localDriver, commentSection);
     }
 
-    public void ScrollDownToTheBottomOfThePage(){
-        ((JavascriptExecutor) this.localDriver)
-                .executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    public void GoToTheBottomOfThePage(){
+        HelperFunctions.ScrollToTheBottomOfThePage(this.localDriver);
     }
 }

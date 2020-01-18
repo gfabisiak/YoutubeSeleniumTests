@@ -12,7 +12,7 @@ public class YoutubeSearchPage {
     }
 
     public YoutubeVideo OpenFirstSearchResult(){
-        WebElement firstResult = this.localDriver.findElement(By.xpath("//*[@id=\"video-title\"]"));
+        WebElement firstResult = this.localDriver.findElement(By.xpath("//ytd-video-renderer[1]/div[1]/div/div[1]/div/h3/a"));
         firstResult.click();
         return new YoutubeVideo(this.localDriver);
     }
