@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28943e95-2122-4a69-8661-f9118c6906ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjectTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,5 +60,9 @@
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
     <state x="616" y="386" key="com.intellij.ide.util.TipDialog/0.29.1920.1051@0.29.1920.1051" timestamp="1579337129835" />
+    <state x="623" y="262" key="search.everywhere.popup" timestamp="1579337446315">
+      <screen x="0" y="29" width="1920" height="1051" />
+    </state>
+    <state x="623" y="262" key="search.everywhere.popup/0.29.1920.1051@0.29.1920.1051" timestamp="1579337446315" />
   </component>
 </project>
