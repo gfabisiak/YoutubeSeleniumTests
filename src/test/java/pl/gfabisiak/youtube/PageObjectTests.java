@@ -30,32 +30,32 @@ public class PageObjectTests {
     @Test
     public void GoToSearchResults(){
         YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
-        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.doASearchQueryOnMainPage("PageObject pattern");
     }
 
     @Test
     public void GoToFirstResultOfSearch(){
         YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
-        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
-        YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.doASearchQueryOnMainPage("PageObject pattern");
+        YoutubeVideo youtubeVideo = youtubeSearchPage.openFirstSearchResult();
     }
 
     @Test
     public void SearchAndPlayVideoFor10SecondsAndPause() throws InterruptedException{
         YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
-        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
-        YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
-        youtubeVideo.StopVideoPlaybackAfter10Seconds();
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.doASearchQueryOnMainPage("PageObject pattern");
+        YoutubeVideo youtubeVideo = youtubeSearchPage.openFirstSearchResult();
+        youtubeVideo.stopVideoPlaybackAfter10Seconds();
     }
 
     @Test
     public void CommentsSectionTest() throws InterruptedException {
         YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
-        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
-        YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
-        youtubeVideo.GoToCommentsSection();
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.doASearchQueryOnMainPage("PageObject pattern");
+        YoutubeVideo youtubeVideo = youtubeSearchPage.openFirstSearchResult();
+        youtubeVideo.goToCommentsSection();
         Thread.sleep(1000);
-        youtubeVideo.GoToTheBottomOfThePage();
+        youtubeVideo.goToTheBottomOfThePage();
     }
 
     @After

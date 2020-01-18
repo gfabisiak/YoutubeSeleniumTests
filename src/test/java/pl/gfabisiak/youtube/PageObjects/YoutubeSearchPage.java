@@ -11,7 +11,7 @@ public class YoutubeSearchPage {
         this.localDriver = driver;
     }
 
-    public YoutubeVideo OpenFirstSearchResult(){
+    public YoutubeVideo openFirstSearchResult(){
         WebElement firstResult = this.localDriver.findElement(By.xpath("//ytd-video-renderer[1]/div[1]/div/div[1]/div/h3/a"));
         firstResult.click();
         return new YoutubeVideo(this.localDriver);

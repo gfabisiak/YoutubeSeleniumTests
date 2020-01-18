@@ -15,18 +15,18 @@ public class YoutubeVideo {
         this.localDriver = driver;
     }
 
-    public void StopVideoPlaybackAfter10Seconds() throws InterruptedException {
+    public void stopVideoPlaybackAfter10Seconds() throws InterruptedException {
         WebElement video = this.localDriver.findElement(By.cssSelector("#movie_player"));
         Thread.sleep(10000);
         video.click();
     }
 
-    public void GoToCommentsSection(){
+    public void goToCommentsSection(){
         WebElement commentSection = this.localDriver.findElement(By.id("sections"));
         HelperFunctions.MoveToElementUsingActions(this.localDriver, commentSection);
     }
 
-    public void GoToTheBottomOfThePage(){
+    public void goToTheBottomOfThePage(){
         HelperFunctions.ScrollToTheBottomOfThePage(this.localDriver);
     }
 }

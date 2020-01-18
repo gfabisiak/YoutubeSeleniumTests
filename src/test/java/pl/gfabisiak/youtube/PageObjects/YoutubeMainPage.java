@@ -15,7 +15,7 @@ public class YoutubeMainPage {
         this.localDriver.get(url);
     }
 
-    public YoutubeSearchPage DoASearchQueryOnMainPage(String searchQuery){
+    public YoutubeSearchPage doASearchQueryOnMainPage(String searchQuery){
         WebElement searchBar = this.localDriver.findElement(By.id("search"));
         searchBar.sendKeys(searchQuery);
         searchBar.sendKeys(Keys.RETURN);
