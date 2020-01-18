@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28943e95-2122-4a69-8661-f9118c6906ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjectTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/gfabisiak/youtube/PageObjects/YoutubeMainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
