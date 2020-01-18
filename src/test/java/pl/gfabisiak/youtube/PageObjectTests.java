@@ -45,8 +45,17 @@ public class PageObjectTests {
         youtubeVideo.StopVideoPlaybackAfter10Seconds();
     }
 
+    @Test
+    public void CommentsSectionTest(){
+        YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
+        YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
+        youtubeVideo.ScrollDownToTheBottomOfThePage();
+    }
+
     @After
-    public void Finalize(){
-        driver.quit();
+    public void Finalize() throws InterruptedException {
+        Thread.sleep(5000);
+        //driver.quit();
     }
 }

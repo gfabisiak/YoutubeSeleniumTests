@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.PageObjectTests.SearchAndPlayVideoFor10SecondsAndPause">
+  <component name="RunManager" selected="JUnit.PageObjectTests.GoToFirstResultOfSearch">
     <configuration name="PageObjectTests" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="YoutubeSeleniumTests" />
       <extension name="coverage">
@@ -48,6 +48,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PageObjectTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YoutubeSeleniumTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.gfabisiak.youtube.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.gfabisiak.youtube" />
+      <option name="MAIN_CLASS_NAME" value="pl.gfabisiak.youtube.PageObjectTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageObjectTests.CommentsSectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YoutubeSeleniumTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.gfabisiak.youtube.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.gfabisiak.youtube" />
+      <option name="MAIN_CLASS_NAME" value="pl.gfabisiak.youtube.PageObjectTests" />
+      <option name="METHOD_NAME" value="CommentsSectionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PageObjectTests.GoToFirstResultOfSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YoutubeSeleniumTests" />
       <extension name="coverage">
@@ -59,38 +90,6 @@
       <option name="PACKAGE_NAME" value="pl.gfabisiak.youtube" />
       <option name="MAIN_CLASS_NAME" value="pl.gfabisiak.youtube.PageObjectTests" />
       <option name="METHOD_NAME" value="GoToFirstResultOfSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PageObjectTests.GoToSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YoutubeSeleniumTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.gfabisiak.youtube.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.gfabisiak.youtube" />
-      <option name="MAIN_CLASS_NAME" value="pl.gfabisiak.youtube.PageObjectTests" />
-      <option name="METHOD_NAME" value="GoToSearchResults" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PageObjectTests.OpenYoutubeMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="YoutubeSeleniumTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.gfabisiak.youtube.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.gfabisiak.youtube" />
-      <option name="MAIN_CLASS_NAME" value="pl.gfabisiak.youtube.PageObjectTests" />
-      <option name="METHOD_NAME" value="OpenYoutubeMainPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PageObjectTests.SearchAndPlayVideoFor10SecondsAndPause" />
-        <item itemvalue="Android JUnit.PageObjectTests" />
         <item itemvalue="JUnit.PageObjectTests.GoToFirstResultOfSearch" />
-        <item itemvalue="JUnit.PageObjectTests.GoToSearchResults" />
-        <item itemvalue="JUnit.PageObjectTests.OpenYoutubeMainPage" />
+        <item itemvalue="JUnit.PageObjectTests.CommentsSectionTest" />
+        <item itemvalue="JUnit.PageObjectTests.SearchAndPlayVideoFor10SecondsAndPause" />
+        <item itemvalue="JUnit.PageObjectTests" />
+        <item itemvalue="Android JUnit.PageObjectTests" />
       </list>
     </recent_temporary>
   </component>
@@ -148,22 +147,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1579341654980">
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1579343417704">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1579341654980" />
-    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1579341654980">
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.29.1920.1051@0.29.1920.1051" timestamp="1579343417704" />
+    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1579343417704">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1579341654980" />
-    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1579341654980">
+    <state width="1876" height="280" key="GridCell.Tab.0.center/0.29.1920.1051@0.29.1920.1051" timestamp="1579343417704" />
+    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1579343417704">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1579341654980" />
-    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1579341654980">
+    <state width="1876" height="280" key="GridCell.Tab.0.left/0.29.1920.1051@0.29.1920.1051" timestamp="1579343417704" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1579343417704">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
-    <state width="1876" height="280" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1579341654980" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right/0.29.1920.1051@0.29.1920.1051" timestamp="1579343417704" />
     <state x="616" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1579337129835">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
