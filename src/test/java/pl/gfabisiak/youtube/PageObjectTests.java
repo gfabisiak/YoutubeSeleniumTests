@@ -37,6 +37,14 @@ public class PageObjectTests {
         YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
     }
 
+    @Test
+    public void SearchAndPlayVideoFor10SecondsAndPause() throws InterruptedException{
+        YoutubeMainPage youtubeMainPage = new YoutubeMainPage(driver);
+        YoutubeSearchPage youtubeSearchPage = youtubeMainPage.DoASearchQueryOnMainPage("PageObject pattern");
+        YoutubeVideo youtubeVideo = youtubeSearchPage.OpenFirstSearchResult();
+        youtubeVideo.StopVideoPlaybackAfter10Seconds();
+    }
+
     @After
     public void Finalize(){
         driver.quit();
