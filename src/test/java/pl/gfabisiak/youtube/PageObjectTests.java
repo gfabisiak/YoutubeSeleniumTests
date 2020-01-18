@@ -1,6 +1,7 @@
 package pl.gfabisiak.youtube;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +17,7 @@ public class PageObjectTests {
     public WebDriver driver;
 
     @Before
-    public void Initialize(){
+    public void setUp(){
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
@@ -59,8 +60,12 @@ public class PageObjectTests {
     }
 
     @After
-    public void Finalize() throws InterruptedException {
-        //Thread.sleep(5000);
-        //driver.quit();
+    public void cleanUp(){
+        driver.manage().deleteAllCookies();
+    }
+
+    @AfterClass
+    public void tearDown(){
+        driver.close();
     }
 }
